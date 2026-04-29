@@ -1,0 +1,384 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: black;
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+}
+
+/* SERVICES */
+#services {
+    padding: 100px;
+    text-align: center;
+
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url('https://images.unsplash.com/photo-1521791136064-7986c2920216');
+    background-size: cover;
+    color: white;
+}
+
+.service-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card i {
+    font-size: 30px;
+    color: gold;
+}
+
+.card h3 {
+    margin-top: 10px;
+}
+
+.card p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* EXTRA SERVICES */
+.extra-services {
+    padding: 100px;
+    text-align: center;
+
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+    url('https://images.unsplash.com/photo-1606813907291-d86efa9b94db');
+    background-size: cover;
+    color: white;
+}
+
+.extra-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.extra-card {
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.extra-card i {
+    font-size: 28px;
+    color: gold;
+}
+
+.extra-card p {
+    color: #ccc;
+}
+
+.extra-card:hover {
+    transform: translateY(-10px);
+}
+
+/* COURT */
+.court {
+    padding: 100px;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+.court-box {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* MARRIAGE */
+.marriage {
+    padding: 100px;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+/* TRUST */
+.trust {
+    padding: 100px;
+    background: black;
+    color: gold;
+    text-align: center;
+}
+
+.trust-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* CONTACT + BOOKING */
+.contact-booking {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 100px;
+    background: linear-gradient(135deg, #eef2f7, #dfe6ed);
+}
+
+/* LEFT BOX */
+.info-box {
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+}
+
+.info-box p {
+    margin: 10px 0;
+}
+
+/* RIGHT FORM */
+.contact-right {
+    background: #111;
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+}
+
+/* FORM */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking-form input,
+.booking-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #1c1c1c;
+    color: white;
+}
+
+.booking-form button {
+    background: gold;
+    color: black;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* 🔥 GLOBAL TEXT IMPROVEMENT */
+h1 {
+    font-size: 52px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 8px;
+}
+
+/* 🔥 SECTION SPACING */
+section {
+    padding: 120px 20px;
+}
+
+/* 🔥 NAVBAR ACTIVE HOVER EFFECT */
+nav a {
+    position: relative;
+    padding: 5px;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: gold;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* 🔥 SERVICE CARD PREMIUM */
+.card {
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4),
+                0 0 15px rgba(255,215,0,0.4);
+}
+
+/* 🔥 ICON GLOW */
+.card i {
+    transition: 0.3s;
+}
+
+.card:hover i {
+    text-shadow: 0 0 10px gold,
+                 0 0 20px gold;
+}
+
+/* 🔥 EXTRA CARD GLOW */
+.extra-card {
+    transition: 0.4s;
+}
+
+.extra-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 0 20px rgba(255,215,0,0.5);
+}
+
+/* 🔥 BUTTON HOVER PREMIUM */
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 15px rgba(255,215,0,0.6);
+}
+
+/* 🔥 CONTACT BOX GLOW */
+.info-box:hover {
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6),
+                0 0 20px rgba(255,215,0,0.3);
+}
+
+/* 🔥 FORM BOX GLOW */
+.contact-right:hover {
+    box-shadow: 0 20px 60px rgba(0,0,0,0.7),
+                0 0 20px rgba(255,215,0,0.3);
+}
+
+/* 🔥 SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* 🔥 RIGHT SIDE HEADING FIX */
+.contact-right h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* 🔥 INPUT TEXT FIX */
+.booking-form input,
+.booking-form textarea {
+    color: white;
+    font-size: 15px;
+}
+
+/* 🔥 PLACEHOLDER CLEAR */
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+    color: #bbb;
+}
+
+/* 🔥 INPUT BACKGROUND SLIGHT LIGHT */
+.booking-form input,
+.booking-form textarea {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid #555;
+}
+
+/* 🔥 FOCUS EFFECT */
+.booking-form input:focus,
+.booking-form textarea:focus {
+    border-color: gold;
+    background: rgba(255,255,255,0.08);
+    box-shadow: 0 0 10px rgba(255,215,0,0.4);
+}
+
+/* 🔥 BUTTON IMPROVE */
+.booking-form button {
+    background: linear-gradient(135deg, gold, #ffd700);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* 🔥 BUTTON HOVER */
+.booking-form button:hover {
+    background: black;
+    color: gold;
+    border: 1px solid gold;
+}
